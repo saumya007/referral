@@ -4,7 +4,14 @@
 	<title>Testing sharing modules</title>
 </head>
 <body>
-<a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share via Whatsapp</a>
+	<a href="https://web.whatsapp.com/send?text=www.google.com" data-action="share/whatsapp/share">Share via Whatsapp web</a>
+<a href="#" onclick="shareing()">Send In Messenger</a>
 
 </body>
+<script type="text/javascript">
+	function shareing(){
+	window.open('fb-messenger://share?link=' + encodeURIComponent("www.google.com") + '&app_id=' + encodeURIComponent("155107241752976"));
+}
+
+</script>
 </html>
