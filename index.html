@@ -2,21 +2,11 @@
 <html>
 <head>
 	<title>Testing sharing modules</title>
-	<style type="text/css">
-		.frames
-		{
-			border-radius: 100%;
-			border:2px solid green;
-			width: 2%;
-			height:20%;
-			background-color: green;
-		}
-	</style>
 </head>
 <body>
 	<a href="https://web.whatsapp.com/send?text=www.google.com" data-action="share/whatsapp/share">Share via Whatsapp web</a>
 
-	<a onclick="share()">Chuoge nahi kya</a>
+	<a href = "#" onclick="share()">Chuoge nahi kya</a>
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 
 
@@ -33,7 +23,7 @@
 function share(){
 FB.ui({
   method: 'send',
-  link: 'http://www.nytimes.com/interactive/2015/04/15/travel/europe-favorite-streets.html',
+  link: 'https://saumya007.github.io/referral/',
 });
 	}
 </script>
