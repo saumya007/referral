@@ -23,25 +23,13 @@ function share(){
 	var mobs = detectmob();
 	if(mobs)
 	{
-		//alert(document.getElementsByTagName('html')[0].innerHTML);
-		//document.getElementById("messenger").href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.facebook.orca%26ddl%3D1%26pcampaignid%3Dweb_ddl_1";
-		//document.getElementById("messenger").href="fb-messenger://share/?link=https://saumya007.github.io/referral&app_id=155107241752976";
 		console.log(window.location.href.indexOf("https://saumya007.github.io/referral/#"));
 		setTimeout(function()
 		    {
-				//window.location.href = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.facebook.orca%26ddl%3D1%26pcampaignid%3Dweb_ddl_1";
 			    	document.getElementById("messenger").href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.facebook.orca%26ddl%3D1%26pcampaignid%3Dweb_ddl_1";
 
-		    },1000);
+		    },500);
 				document.getElementById("messenger").href="fb-messenger://share/?link=https://saumya007.github.io/referral&app_id=155107241752976";
-
-		//if(window.location.href.indexOf("https://saumya007.github.io/referral/#")==0)
-		//	    {
-		//		console.log("seems something is here");
-		//		window.location.href = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.facebook.orca%26ddl%3D1%26pcampaignid%3Dweb_ddl_1";
-		//	    	document.getElementById("messenger").href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.facebook.orca%26ddl%3D1%26pcampaignid%3Dweb_ddl_1";
-
-		//	    }	
 	}
 	else{
 			FB.ui({
