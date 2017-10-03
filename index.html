@@ -23,8 +23,10 @@ function share(){
 	var mobs = detectmob();
 	if(mobs)
 	{
+		alert(document.getElementsByTagName('html')[0].innerHTML);
 		document.getElementById("messenger").href="market ://details id=com.facebook.orca";
 		document.getElementById("messenger").href="fb-messenger://share/?link=https://saumya007.github.io/referral&app_id=155107241752976";
+	
 	}
 	else{
 			FB.ui({
