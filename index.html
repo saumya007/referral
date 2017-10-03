@@ -37,12 +37,14 @@ function detectmob() {
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i)
  ){
+	 	document.getElementById("whatsapp_share").href ="whatsapp://send?text=The text to share!";
+
     return true;
-	document.getElementById("whatsapp_share").href ="whatsapp://send?text=The text to share!";
   }
  else {
+	     document.getElementById("whatsapp_share").href="https://web.whatsapp.com/send?text=www.google.com";
+
     return false;
-    document.getElementById("whatsapp_share").href="https://web.whatsapp.com/send?text=www.google.com";
   }
 }
 </script>
