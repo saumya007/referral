@@ -15,16 +15,10 @@
 </head>
 <body>
 	<a href="https://web.whatsapp.com/send?text=www.google.com" data-action="share/whatsapp/share">Share via Whatsapp web</a>
- 
-		<div class="addthis_inline_share_toolbox"></div>
 
-	<div class="fb-send frames" 
-    data-href="https://www.google.com" 
-      data-layout="button">
-   </div>
+	<a onclick="share()"></a>
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d38fa694a04a78"></script>
 
 </body>
 <div id="fb-root"></div>
@@ -35,6 +29,11 @@
   js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=155107241752976";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
+function share(){
+FB.ui({
+  method: 'send',
+  link: 'http://www.nytimes.com/interactive/2015/04/15/travel/europe-favorite-streets.html',
+});
+	}
 </script>
 </html>
