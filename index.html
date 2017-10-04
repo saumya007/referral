@@ -70,9 +70,27 @@ function detectmob() {
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i)
  ){
+	 	
 	 	document.getElementById("whatsapp_share").href ="whatsapp://send?text=The text to share!";
 		//document.getElementById("messenger").href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.facebook.orca%26ddl%3D1%26pcampaignid%3Dweb_ddl_1";
-
+setTimeout(function()
+		    {
+					console.log(window.location.href +"hahshasha"+ window.location.href.indexOf("whatsapp://send?text=The text to share!"));
+				
+				if(window.location.href.indexOf("whatsapp://send?text=The text to share!")==-1)
+				{
+				window.location.href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.whatsapp";
+			    	//document.getElementById("messenger").href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.facebook.orca%26ddl%3D1%26pcampaignid%3Dweb_ddl_1";
+				console.log("idhar");
+					setTimeout(function()
+		    {
+					console.log(window.location.href +"hahshasha"+ window.location.href.indexOf("fb-messenger://share/?link=https://saumya007.github.io/referral&app_id=155107241752976"));
+				window.location.href="https://saumya007.github.io/referral/";
+			    	//document.getElementById("messenger").href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id%3Dcom.facebook.orca%26ddl%3D1%26pcampaignid%3Dweb_ddl_1";
+		    },10);
+				}
+		    },25);
+	 	window.location.href= "whatsapp://send?text=The text to share!";
     return true;
   }
  else {
